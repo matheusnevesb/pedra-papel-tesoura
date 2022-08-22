@@ -19,7 +19,8 @@ iniciarJogo.onclick = function () {
 
 
 
-
+let resultadoJogador = 0
+let resultadoMaquina = 0
 
 let pedra = document.querySelector('#pedra')
 let papel = document.querySelector('#papel')
@@ -47,7 +48,7 @@ papel.onclick = function () {
 tesoura.onclick = function () {
     escolha.innerHTML = 'Tesoura'
 }
-
+let rodada = 0
 let confirmar = document.querySelector('#confirmar')
 confirmar.onclick = function () {
     let maquinaDisplay 
@@ -61,15 +62,69 @@ confirmar.onclick = function () {
     }
     escolhaMaquina.innerHTML = maquinaDisplay 
     
-    let rounds = document.querySelector('rounds')
-    rounds.innerHTML = `
-    <div>
-        Round 1:
-        escolha do jogador 
-        X
-        escolha da Maquina
-        quem ganhou 
-    </div>
-    `
+    let linhasRounds = document.querySelector('#linhasRounds')
+    rodada +=1
+
+    placarJogadorf = placarJogador.innerHTML
+    placarMaquinaf = placarMaquina.innerHTML
+    
+    let quemGanhou 
+    
+    if ((placarJogadorf < 3) && (placarMaquinaf < 3)) {
+        if ((escolha.innerHTML === 'Pedra') && (escolhaMaquina.innerHTML === 'Pedra')) {
+            resultadoJogador += 0
+            resultadoMaquina += 0
+            quemGanhou = 'Empate!'
+        }else if ((escolha.innerHTML === 'Pedra') && (escolhaMaquina.innerHTML === 'Papel')){
+            resultadoJogador += 0
+            resultadoMaquina += 1
+            quemGanhou = 'Maquina Ganhou!'
+        }else if ((escolha.innerHTML === 'Pedra') && (escolhaMaquina.innerHTML === 'Tesoura')){
+            resultadoJogador += 1
+            resultadoMaquina += 0
+            quemGanhou = 'Jogador ganhou!'
+        }else if ((escolha.innerHTML === 'Papel') && (escolhaMaquina.innerHTML === 'Pedra')) {
+            resultadoJogador += 1
+            resultadoMaquina += 0
+            quemGanhou = 'Jogador ganhou!'
+        }else if ((escolha.innerHTML === 'Papel') && (escolhaMaquina.innerHTML === 'Papel')){
+            resultadoJogador += 0
+            resultadoMaquina += 0
+            quemGanhou = 'Empate!'
+        }else if ((escolha.innerHTML === 'Papel') && (escolhaMaquina.innerHTML === 'Tesoura')){
+            resultadoJogador += 0
+            resultadoMaquina += 1
+            quemGanhou = 'Maquina ganhou!'
+        }else if ((escolha.innerHTML === 'Tesoura') && (escolhaMaquina.innerHTML === 'Tesoura')){
+            resultadoJogador += 0
+            resultadoMaquina += 0
+            quemGanhou = 'Empate!'
+        }else if ((escolha.innerHTML === 'Tesoura') && (escolhaMaquina.innerHTML === 'Pedra')) {
+            resultadoJogador += 0
+            resultadoMaquina += 1
+            quemGanhou = 'Maquina ganhou!'
+        }else if ((escolha.innerHTML === 'Tesoura') && (escolhaMaquina.innerHTML === 'Papel')){
+            resultadoJogador += 1
+            resultadoMaquina += 0
+            quemGanhou = 'Jogador ganhou!'
+        }
+        placarJogador.innerHTML = resultadoJogador
+        placarMaquina.innerHTML = resultadoMaquina
+
+        linhasRounds.innerHTML += `
+        <div>
+            Round ${rodada}:
+            ${escolha.innerHTML} 
+            X
+            ${escolhaMaquina.innerHTML}
+            ${quemGanhou}
+        </div>
+        `
+        
+    }else if ((placarJogadorf === 3) || (placarMaquinaf === 3)) {
+        let tirar = document.querySelector('.acao')
+        tirar.classList.add('antes')
+    }
+    
 }
 
