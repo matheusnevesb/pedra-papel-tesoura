@@ -22,6 +22,8 @@ body {
     
 }
 
+
+
 main {
     background-color: rgb(221, 219, 219);
     width: 60%;
@@ -59,4 +61,8 @@ main h2,span{
 
 .botoes{
     align-items: flex-end;
+}
+
+.antes {
+    display: none;
 }

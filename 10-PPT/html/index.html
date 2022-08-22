@@ -15,7 +15,15 @@
     </header>
     
     <main>
-        <div class="titulo">
+
+        <div class="TelaInicio">
+            <h1>Bem vindo!</h1>
+
+            <input id="nomeJogador" type="text" placeholder="Qual seu nome?">
+
+            <button id="iniciarJogo">Iniciar jogo</button>
+        </div>
+        <div class="titulo antes">
             
             <div>
                 <h2>Nome_do_jodagor</h2>
@@ -32,13 +40,13 @@
             
         </div>
         
-        <div class="acao">
+        <div class="acao antes">
             <div>
                 <h3>
                     voce escolheu:
                 </h3>
                 <span id="escolha">
-                    Pedra
+                    ...
                 </span>
                 <button id="confirmar">confirmar</button>
             </div>
@@ -52,14 +60,13 @@
         </div>
         
 
-        <div>
+        <div class="rounds antes">
             <h4>rounds:</h4>
-            <div>
-
-            </div>
+            
+            
         </div>
 
-        <section class="botoes">
+        <section class="botoes antes">
             <button id="pedra">Pedra</button>
             <button id="papel">Papel</button>
             <button id="tesoura">Tesoura</button>
