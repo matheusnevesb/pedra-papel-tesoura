@@ -125,6 +125,7 @@ confirmar.onclick = function () {
                 ${escolha.innerHTML} 
                 X
                 ${escolhaMaquina.innerHTML}
+                ----------
                 ${quemGanhou}
             </div>
             `
@@ -136,8 +137,11 @@ confirmar.onclick = function () {
 
         if((placarJogadorf == 3) || (placarMaquinaf == 3)) {
             console.log('acabou')
-            let tirar = document.querySelector('.acao')
-            tirar.classList.add('antes')
+            //let tirar = document.querySelector('.acao')
+            //tirar.classList.add('antes')
+            let caixa = document.querySelector('#caixa')
+            caixa.classList.remove('antes')
+
             let jogarNovamente = document.querySelector('#jogarNovamente')
             jogarNovamente.classList.remove('antes')
             let novamente = document.querySelector('#novamente')

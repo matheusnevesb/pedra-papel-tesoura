@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    
+    font-family: 'DynaPuff', cursive;
 }
 
 header {
@@ -47,6 +47,10 @@ main {
     padding: 10px;
 }
 
+.TelaInicio input::placeholder {
+    color: white;
+}
+
 .TelaInicio button,button {
     margin: 10px auto;
     display: block;
@@ -56,10 +60,12 @@ main {
     padding: 20px 10px;
     cursor: pointer;
     width: 20%;
+    border-radius: 15px;
 }
 
-.TelaInicio button:hover {
-    font-size: 20px;
+.TelaInicio button:hover,button:hover {
+    background-color: #7260bc;
+    border: 1px solid #5C49A8;
 }
 
 main h2,span{
@@ -102,6 +108,10 @@ main h2,span{
     align-items: center;
 }
 
+#escolhaMaquina {
+    margin-left: 15px;
+}
+
 .acao span {
     display: flex;
     align-items: center ;
@@ -115,9 +125,19 @@ main h2,span{
 .botoes button{
     align-items: flex-end;
     display: inline;
+    width: 30%;
     margin: 10px auto;
 }
 
 .antes {
     display: none;
+}
+
+.confirmar button {
+    width: 97%;
+}
+
+#caixa {
+    width: 100px;
+    height: 76px;
 }
