@@ -11,11 +11,14 @@ iniciarJogo.onclick = function () {
     rounds.classList.remove('antes')
     let botoes = document.querySelector('.botoes')
     botoes.classList.remove('antes')
+    let connfirmar = document.querySelector('#confirmar')
+    confirmar.classList.remove('antes')
 
     let nomeJogador = document.querySelector('#nomeJogador')
-
     let nomeDisplay = document.querySelector('#nomeDisplay')
+
     nomeDisplay.innerHTML = nomeJogador.value
+
 }
 
 
@@ -127,6 +130,10 @@ confirmar.onclick = function () {
             `
             
         }
+
+        placarJogadorf = placarJogador.innerHTML
+        placarMaquinaf = placarMaquina.innerHTML
+
         if((placarJogadorf == 3) || (placarMaquinaf == 3)) {
             console.log('acabou')
             let tirar = document.querySelector('.acao')
@@ -134,6 +141,8 @@ confirmar.onclick = function () {
             let jogarNovamente = document.querySelector('#jogarNovamente')
             jogarNovamente.classList.remove('antes')
             let novamente = document.querySelector('#novamente')
+            connfirmar = document.querySelector('#confirmar')
+            confirmar.classList.add('antes')
             novamente.onclick = function () {
                 console.log('recarregar')
                 window.location.reload()

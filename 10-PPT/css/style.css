@@ -1,13 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 header {
     width: 100vw;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: #352867;
 }
 
 header h1 {
@@ -16,7 +17,7 @@ header h1 {
 }
 
 body {
-    background-color: rgb(92, 92, 92);
+    background-color: #352867;
     height: 100vh;
     width: 100vw;
     
@@ -25,12 +26,40 @@ body {
 
 
 main {
-    background-color: rgb(221, 219, 219);
+    background-color: #352867;
     width: 60%;
     height: 50%;
     margin: 20vh auto;
-    border-radius: 30px;
-    box-shadow: 5px 10px 8px black;
+    color: white;
+}
+
+.TelaInicio {
+    text-align: center;
+}
+
+.TelaInicio input {
+    color: white;
+    background-color: #352867;
+    margin: 20px 0;
+    height: 2rem;
+    width: 20%;
+    border: 2px solid #5C49A8;
+    padding: 10px;
+}
+
+.TelaInicio button,button {
+    margin: 10px auto;
+    display: block;
+    color: white;
+    background-color: #5C49A8;
+    border: none;
+    padding: 20px 10px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.TelaInicio button:hover {
+    font-size: 20px;
 }
 
 main h2,span{
@@ -44,23 +73,49 @@ main h2,span{
 
 .titulo div {
     width: 35%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .acao {
     display: flex;
     justify-content: space-between;
+    height: 2.5rem;
+    width: 375px;
+    margin: 0 auto;
 }
 
 .acao div {
-    width: 40%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .acao div h3{
     display: inline-block;
+    width: 40%;
 }
 
-.botoes{
+.acao div span {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.acao span {
+    display: flex;
+    align-items: center ;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.botoes button{
     align-items: flex-end;
+    display: inline;
+    margin: 10px auto;
 }
 
 .antes {
