@@ -19,14 +19,14 @@
         <div class="TelaInicio">
             <h1>Bem vindo!</h1>
 
-            <input id="nomeJogador" type="text" placeholder="Qual seu nome?">
+            <input id="nomeJogador" name="name" type="text" placeholder="Qual seu nome?" >
 
-            <button id="iniciarJogo">Iniciar jogo</button>
+            <button id="iniciarJogo" value="name">Iniciar jogo</button>
         </div>
         <div class="titulo antes">
             
             <div>
-                <h2>Nome_do_jodagor</h2>
+                <h2 id="nomeDisplay">Nome_do_jodagor</h2>
                 <span id="placarJogador">10</span>
             </div>
             
@@ -45,9 +45,7 @@
                 <h3>
                     voce escolheu:
                 </h3>
-                <span id="escolha">
-                    ...
-                </span>
+                <span id="escolha">...</span>
                 <button id="confirmar">confirmar</button>
             </div>
     
@@ -73,6 +71,10 @@
             <button id="papel">Papel</button>
             <button id="tesoura">Tesoura</button>
         </section>
+
+        <div id="jogarNovamente" class="antes">
+            <button id="novamente">Jogar novamente!</button>
+        </div>
     </main>
 
     <script src="../JavaScript/script.js"></script>
