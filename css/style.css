@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'DynaPuff', cursive;
+}
+
+
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px #352867 inset;
+    -webkit-box-shadow: 0 0 0 30px #352867 inset;
+    -webkit-text-fill-color: white;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+    color: white;
+    background-color: #352867;
+}
+
+header h1 {
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+body {
+    background-color: #352867;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+
+main {
+    background-color: #352867;
+    width: 60%;
+    height: 50%;
+    margin: 20vh auto;
+    color: white;
+}
+
+.TelaInicio {
+    text-align: center;
+}
+
+.TelaInicio input {
+    color: white;
+    background-color: #352867;
+    margin: 20px 0;
+    height: 2rem;
+    width: 20%;
+    border: 2px solid #5C49A8;
+    padding: 10px;
+}
+
+.TelaInicio input::placeholder {
+    color: white;
+}
+
+.TelaInicio button,button {
+    margin: 10px auto;
+    display: block;
+    color: white;
+    background-color: #5C49A8;
+    border: none;
+    padding: 20px 10px;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 15px;
+}
+
+.TelaInicio button:hover,button:hover {
+    background-color: #7260bc;
+    border: 1px solid #5C49A8;
+}
+
+main h2,span{
+    display: inline-block;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo div {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.acao {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 375px;
+    margin: 0 auto;
+}
+
+.acao div {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acao div h3{
+    display: inline-block;
+    width: 40%;
+}
+
+.acao div span {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#escolhaMaquina {
+    margin-left: 15px;
+}
+
+.acao span {
+    display: flex;
+    align-items: center ;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.botoes button{
+    align-items: flex-end;
+    display: inline;
+    width: 30%;
+    margin: 10px auto;
+}
+
+.antes {
+    display: none;
+}
+
+.confirmar button {
+    width: 97%;
+}
+
+#caixa {
+    width: 100px;
+    height: 76px;
+}
