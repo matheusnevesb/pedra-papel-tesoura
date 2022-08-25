@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra - papel - tesoura</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pedra - Papel - Tesoura</h1>
+    </header>
+    
+    <main>
+
+        <div class="TelaInicio">
+            <h1>Bem vindo!</h1>
+
+            <input id="nomeJogador" name="name" type="text" placeholder="Qual seu nome?" >
+
+            <button id="iniciarJogo" value="name">Iniciar jogo</button>
+        </div>
+        <div class="titulo antes">
+            
+            <div>
+                <h2 id="nomeDisplay">Nome_do_jodagor</h2>
+                <span id="placarJogador">10</span>
+            </div>
+            
+            <span>X</span>
+    
+            
+            <div>
+                <span id="placarMaquina">10</span>
+                <h2>Maquina</h2>
+            </div>
+            
+        </div>
+        
+        <div class="acao antes">
+            <div>
+                <h3>
+                    voce escolheu:
+                </h3>
+                <span id="escolha">...</span>
+            </div>
+    
+            <span>X</span>
+    
+            <div>
+                <span id="escolhaMaquina">??????</span>
+    
+            </div>
+        </div>
+        
+
+        
+
+        <section class="botoes antes">
+            <button id="pedra">Pedra</button>
+            <button id="papel">Papel</button>
+            <button id="tesoura">Tesoura</button>
+        </section>
+
+        <div class="confirmar">
+            <button class="antes"id="confirmar">confirmar</button>
+        </div>
+        
+        <div id="caixa" class="antes"></div>
+
+        <div class="rounds antes">
+            <h4>Rounds:</h4>
+            <div id="linhasRounds">
+                
+            </div>
+            
+        </div>
+
+        <div id="jogarNovamente" class="antes">
+            <button id="novamente">Jogar novamente!</button>
+        </div>
+    </main>
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>
